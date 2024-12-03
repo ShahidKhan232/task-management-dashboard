@@ -1,0 +1,40 @@
+.task-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.task-card-enter {
+    opacity  : 0;
+    transform: translateY(-20px);
+}
+
+.task-card-enter-active {
+    opacity  : 1;
+    transform: translateY(0);
+}
+
+.task-card-exit {
+    opacity  : 1;
+    transform: translateY(0);
+}
+
+.task-card-exit-active {
+    opacity  : 0;
+    transform: translateY(20px);
+}
+
+.task-card.completed {
+    border-left: 5px solid green;
+}
+
+.task-card .MuiCheckbox-root {
+    color: green;
+}
+
+.task-card.overdue {
+    border-left     : 5px solid red;
+    background-color: #ffe6e6;
+}
+
+.task-card .MuiCheckbox-root {
+    color: red;
+}
